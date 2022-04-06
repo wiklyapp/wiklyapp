@@ -3,20 +3,21 @@
 	'use strict';
 
 	var owlCarousel = function(){
-
-        new WOW().init();
+        
+				new WOW().init();
 
         $('.owl-carousel').owlCarousel({
             items : 4,
             loop  : true,
-            margin : 170,
+            margin : 10,
             center : true,
             smartSpeed :900,
             nav:true,
             navText: [
-                "<i class='fa carousel-left-arrow fa-chevron-left'></i>",
-                "<i class='fa carousel-right-arrow fa-chevron-right'></i>"
-            ],responsiveClass:true,
+            //     "<i class='fa carousel-left-arrow fa-chevron-left'></i>",
+            //     "<i class='fa carousel-right-arrow fa-chevron-right'></i>"
+            ],
+            responsiveClass:true,
             responsive:{
                 0:{
                     items:1,
@@ -32,11 +33,11 @@
                     nav:true,
                     loop:true,
                     autoplay: true,
-                    autoplayTimeout: 1500,
-                    navText: [
-                        "<i class='fa carousel-left-arrow fa-chevron-left'></i>",
-                        "<i class='fa carousel-right-arrow fa-chevron-right'></i>"
-                    ],
+                    autoplayTimeout: 2500,
+                    // navText: [
+                    //     "<i class='fa carousel-left-arrow fa-chevron-left'></i>",
+                    //     "<i class='fa carousel-right-arrow fa-chevron-right'></i>"
+                    // ],
                 }
             }
         });

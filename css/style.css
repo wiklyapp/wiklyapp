@@ -19,7 +19,7 @@ html {
 }
 
 .download-btn-first:hover {
-  background: #234197;
+  background: #b34058;
   color: #fff !important;
 }
 
@@ -29,13 +29,13 @@ html {
 
 .features-btn-first:hover {
   background: #f7f7f7 !important;
-  color: #234197 !important;
+  color: #b34058 !important;
 }
 
 #fh5co-hero-wrapper {
   height: 800px;
   width: 100%;
-  background: url("../img/banner-bg.jpg") no-repeat center;
+  background: url("../img/banner-bg.png") no-repeat center;
   border-radius: 0 0 50% 50% / 4%;
 }
 
@@ -49,13 +49,14 @@ html {
 
 .main-navbar-nav {
   color: #fff !important;
+	top: 20px;
 }
 .main-navbar-nav li {
   color: #fff;
   opacity: .7;
 }
 .main-navbar-nav .navbar-nav .nav-item a:hover {
-  color: #234197 !important;
+  color: #b34058 !important;
   -webkit-transition: all .33s ease;
   -moz-transition: all .33s ease;
   -o-transition: all .33s ease;
@@ -90,6 +91,13 @@ html {
   transition: all .2s ease;
 }
 
+
+.main-navbar-nav img {
+  padding-right: 30px;
+	margin-top: -10px;
+/*	  position: relative;*/
+}
+
 .fh5co-hero-inner {
   margin-top: 110px;
   position: relative;
@@ -112,13 +120,13 @@ html {
   font-size: 15px;
   padding: 10px 15px;
   font-weight: 700;
-  color: #234197;
+  color: #b34058;
 }
 .fh5co-hero-inner .features-btn-first {
   font-size: 15px;
   padding: 8px 13px;
   font-weight: 400;
-  background: #234197;
+  background: #b34058;
   color: #fff;
   margin-left: 10px;
 }
@@ -139,14 +147,13 @@ html {
   overflow: hidden;
 }
 .fh5co-advantages-outer .span-perfect {
-  color: #648cff;
-  text-transform: uppercase;
-  font-size: 27px;
+  color: #E2506F;
+  font-size: 40px;
   letter-spacing: 1px;
 }
 .fh5co-advantages-outer .span-features {
-  text-transform: uppercase;
-  font-size: 42px;
+/*  text-transform: uppercase;*/
+  font-size: 40px;
 }
 .fh5co-advantages-outer .second-title {
   text-align: center;
@@ -165,20 +172,21 @@ html {
   padding-right: 30px;
   position: relative;
   top: 1px;
-  color: #648cff;
+  color: #e2506f;
 }
 .fh5co-advantages-outer .fh5co-advantages-grid-columns .col-sm-4 .grid-title {
   float: left;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
+  color: #E2506F;
 }
 .fh5co-advantages-outer .fh5co-advantages-grid-columns .col-sm-4 .grid-desc {
   float: right;
   font-size: 13px;
   padding-right: 7%;
   width: 70%;
-  color: #c7c7c7;
-  margin-top: 10px;
+  color: #888;
+  margin-top: 8px;
   line-height: 1.87em;
 }
 
@@ -195,14 +203,35 @@ html {
   height: auto;
   padding: 70px;
 }
-.fh5co-slider-outer h1 {
-  color: #648cff;
-  text-transform: uppercase;
+
+/*.fh5co-slider-outer h1 {
+  color: #e2506f;
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 10px;
   text-align: center;
 }
+*/
+.fh5co-slider-outer .span-wikly {
+  color: #e2506f;
+/*  font-size: 30px;*/
+/*  font-weight: 600;*/
+/*  margin-bottom: 10px;*/
+  font-size: 40px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+
+.fh5co-slider-outer .span-action {
+	color: #0;
+  font-size: 40px;
+/*  letter-spacing: 1px;*/
+/*  font-weight: 600;*/
+/*  margin-bottom: 10px;*/
+  text-align: center;
+}
+
 .fh5co-slider-outer > h1, .fh5co-slider-outer small {
   text-align: center;
   display: block;
@@ -213,20 +242,20 @@ html {
 .fh5co-slider-outer .carousel-left-arrow {
   position: absolute;
   left: -100px;
-  bottom: 250px;
+  bottom: 350px;
   font-size: 60px;
   color: #ececec;
 }
 .fh5co-slider-outer .carousel-right-arrow {
   position: absolute;
   right: -100px;
-  bottom: 250px;
+  bottom: 350px;
   font-size: 60px;
   color: #ececec;
 }
 .fh5co-slider-outer .item img {
-  height: 400px;
-  width: 200px;
+  height: 600px;
+/*  width: 400px;*/
   object-fit: contain;
 }
 
@@ -234,7 +263,7 @@ html {
 										FEATURES
    ========================================================================================================== */
 .curved-bg-div {
-  background: url("../img/curved-bgg.jpg") no-repeat;
+  background: url("../img/curved-bgg.png") no-repeat;
   background-position: 0px -140px;
   background-size: cover;
   width: 100%;
@@ -257,7 +286,7 @@ html {
   position: relative;
 }
 .fh5co-features-outer .sm-6-content h1 {
-  color: #648cff;
+  color: #e2506f;
   text-transform: uppercase;
   font-size: 25px;
   font-weight: 600;
@@ -413,7 +442,7 @@ html {
   margin-top: 100px;
 }
 .fh5co-reviews-outer > h1 {
-  color: #648cff;
+  color: #e2506f;
   text-transform: uppercase;
   font-size: 30px;
   font-weight: 600;
@@ -439,7 +468,7 @@ html {
 .fh5co-bottom-outer {
   width: 100%;
   height: 572px;
-  background: url("../img/download-section-bg.jpg") no-repeat center;
+  background: url("../img/download-section-bg.png") no-repeat center;
   margin-top: 120px;
   overflow-x: hidden;
 }
@@ -477,7 +506,7 @@ html {
   width: 100%;
   padding: 50px;
   height: 250px;
-  background: #2e3149;
+  background: #7e2d3e;
   overflow: hidden;
 }
 .footer-outer .footer-inner {
@@ -513,7 +542,7 @@ html {
   position: relative;
   top: -5px;
   font-weight: 600;
-  color: #fff;
+  color: #e2506f;
 }
 .footer-outer .column-2-3 {
   width: 60%;
@@ -563,12 +592,12 @@ html {
   height: 1px;
   width: 60%;
   margin: 0 auto;
-  border: 1px solid #434769;
+  border: 1px solid #b34058;
   display: block;
   margin-top: 50px;
 }
 .footer-outer .copyright {
-  color: #565b87;
+  color: #e2506f;
   text-align: center;
   font-size: 13px;
   padding: 40px 0;
@@ -709,7 +738,7 @@ html {
   .fh5co-slider-outer .carousel-right-arrow {
     position: absolute;
     right: -70px;
-    bottom: 250px;
+    bottom: 350px;
     font-size: 60px;
     color: #ececec;
   }
@@ -717,7 +746,7 @@ html {
   .fh5co-slider-outer .carousel-left-arrow {
     position: absolute;
     left: -70px;
-    bottom: 250px;
+    bottom: 350px;
     font-size: 60px;
     color: #ececec;
   }
@@ -834,13 +863,13 @@ html {
   .fh5co-slider-outer .carousel-left-arrow {
     left: 50px;
     font-size: 50px;
-    bottom: 190px;
+    bottom: 350px;
   }
 
   .fh5co-slider-outer .carousel-right-arrow {
     right: 50px;
     font-size: 50px;
-    bottom: 190px;
+    bottom: 350px;
   }
 
   .fh5co-reviews-inner .col-sm-5 {
@@ -853,7 +882,7 @@ html {
   }
 
   .fh5co-slider-outer .item img {
-    height: 300px;
+    height: 600px;
   }
 
   .fh5co-reviews-outer {
