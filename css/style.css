@@ -786,11 +786,37 @@ html {
     display: flex;
     flex-direction: column;
   }
+	
+  .fh5co-features-grid-columns .in-order-3 {
+    order: 2;
+  }
+	
   .fh5co-features-grid-columns .in-order-4 {
     order: 1;
   }
-  .fh5co-features-grid-columns .in-order-3 {
-    order: 2;
+	
+  .fh5co-features-grid-columns .in-order-5 {
+    order: 3;
+  }
+
+  .fh5co-features-grid-columns .in-order-6 {
+    order: 4;
+  }
+	
+  .fh5co-features-grid-columns .in-order-7 {
+    order: 6;
+  }
+	
+  .fh5co-features-grid-columns .in-order-8 {
+    order: 5;
+  }
+	
+  .fh5co-features-grid-columns .in-order-9 {
+    order: 7;
+  }
+
+  .fh5co-features-grid-columns .in-order-10 {
+    order: 8;
   }
 
   .fh5co-reviews-outer {
