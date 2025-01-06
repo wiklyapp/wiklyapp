@@ -18,7 +18,7 @@
             try {
                 const response = await fetch('/${page}/${locale}.html');
                 if (!response.ok) {
-                    container.innerHTML = '<p>Page "/${page}/${locale}" not found</p>';
+                    container.innerHTML = '<p>Page /${page}/${locale} not found</p>';
                     return;
                 }
                 
@@ -40,6 +40,6 @@
     </script>
 </head>
 <body>
-    <div id="content">Loading...</div>
+    <div id="content">Loading...1</div>
 </body>
 </html>
