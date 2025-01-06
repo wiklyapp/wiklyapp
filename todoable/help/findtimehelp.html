@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Localized Page</title>
+    <script>
+        const translations = {
+            en: {
+                welcome: "Welcome",
+                description: "This is a localized website",
+                button: "Click me"
+            },
+            es: {
+                welcome: "Bienvenido",
+                description: "Este es un sitio web localizado",
+                button: "Haz clic"
+            },
+            fr: {
+                welcome: "Bienvenue",
+                description: "Ceci est un site web localisé",
+                button: "Cliquez ici"
+            }
+        };
+
+        function updateContent() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const locale = urlParams.get('locale') || 'en';
+            const text = translations[locale] || translations.en;
+
+            document.getElementById('welcome').textContent = text.welcome;
+            document.getElementById('description').textContent = text.description;
+            document.getElementById('button').textContent = text.button;
+        }
+
+        window.onload = updateContent;
+    </script>
+</head>
+<body style="font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px;">
+    <h1 id="welcome"></h1>
+    <p id="description"></p>
+    <button id="button"></button>
+
+    <div style="margin-top: 20px;">
+        <a href="?locale=en">English</a> |
+        <a href="?locale=es">Español</a> |
+        <a href="?locale=fr">Français</a>
+    </div>
+</body>
+</html>
