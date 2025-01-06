@@ -16,7 +16,7 @@
             const container = document.getElementById('content');
             
             try {
-                const response = await fetch(`/${page}/${page}.${locale}.html`);
+                const response = await fetch(`/${page}/${locale}.html`);
                 if (!response.ok) {
                     container.innerHTML = `<p>Page "${page}" not found</p>`;
                     return;
