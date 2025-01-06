@@ -16,9 +16,9 @@
             const container = document.getElementById('content');
             
             try {
-                const response = await fetch('/${page}/${locale}.html');
+                const response = await fetch(`/${page}/${locale}.html`);
                 if (!response.ok) {
-                    container.innerHTML = '<p>Page /${page}/${locale} not found</p>';
+                    container.innerHTML = `<p>Page "${page}" not found</p>`;
                     return;
                 }
                 
@@ -26,13 +26,13 @@
                 
                 if (locale !== requestedLocale) {
                     container.insertAdjacentHTML('beforebegin', 
-                        '<div style="background: #fff3cd; padding: 10px; margin-bottom: 10px;">
-                            Language ${requestedLocale} not available. Showing ${locale} version.
-                        </div>'
+                        `<div style="background: #fff3cd; padding: 10px; margin-bottom: 10px;">
+                            Language '${requestedLocale}' not available. Showing ${locale} version.
+                        </div>`
                     );
                 }
             } catch (error) {
-                container.innerHTML = '<p>Error: ${error.message}</p>';
+                container.innerHTML = `<p>Error: ${error.message}</p>`;
             }
         }
 
@@ -40,6 +40,6 @@
     </script>
 </head>
 <body>
-    <div id="content">Loading...1</div>
+    <div id="content">Loading...</div>
 </body>
 </html>
