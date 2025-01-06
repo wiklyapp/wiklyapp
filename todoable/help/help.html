@@ -21,7 +21,7 @@
         .tip {
             background: #f5f5f5;
             border-radius: 6px;
-            padding: 0px 15px;
+            padding: 5px 15px;
         }
         img {
             max-width: 100%;
@@ -48,15 +48,7 @@
                     return;
                 }
                 
-                container.innerHTML = await response.text();
-                
-                if (locale !== requestedLocale) {
-                    container.insertAdjacentHTML('beforebegin', 
-                        `<div style="background: #fff3cd; padding: 10px; margin-bottom: 10px;">
-                            Language '${requestedLocale}' not available. Showing ${locale} version.
-                        </div>`
-                    );
-                }
+                container.innerHTML = await response.text();                
             } catch (error) {
                 container.innerHTML = `<p>Error: ${error.message}</p>`;
             }
