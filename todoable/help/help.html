@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Content</title>
+    <script>
+        const SUPPORTED_LOCALES = ['en'];
+        const DEFAULT_LOCALE = 'en';
+
+        async function loadContent() {
+            const params = new URLSearchParams(window.location.search);
+            const requestedLocale = params.get('locale') || DEFAULT_LOCALE;
+            const page = params.get('page') || 'help';
+            
+            const locale = SUPPORTED_LOCALES.includes(requestedLocale) ? requestedLocale : DEFAULT_LOCALE;
+            const container = document.getElementById('content');
+            
+            try {
+                const response = await fetch(`/${page}/${page}.${locale}.html`);
+                if (!response.ok) {
+                    container.innerHTML = `<p>Page "${page}" not found</p>`;
+                    return;
+                }
+                
+                container.innerHTML = await response.text();
+                
+                if (locale !== requestedLocale) {
+                    container.insertAdjacentHTML('beforebegin', 
+                        `<div style="background: #fff3cd; padding: 10px; margin-bottom: 10px;">
+                            Language '${requestedLocale}' not available. Showing ${locale} version.
+                        </div>`
+                    );
+                }
+            } catch (error) {
+                container.innerHTML = `<p>Error: ${error.message}</p>`;
+            }
+        }
+
+        window.onload = loadContent;
+    </script>
+</head>
+<body>
+    <div id="content">Loading...</div>
+</body>
+</html>
