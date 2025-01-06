@@ -10,7 +10,7 @@
         async function loadContent() {
             const params = new URLSearchParams(window.location.search);
             const requestedLocale = params.get('locale') || DEFAULT_LOCALE;
-            const page = params.get('page');
+            const page = params.get('page') || 'help';
             
             const locale = SUPPORTED_LOCALES.includes(requestedLocale) ? requestedLocale : DEFAULT_LOCALE;
             const container = document.getElementById('content');
