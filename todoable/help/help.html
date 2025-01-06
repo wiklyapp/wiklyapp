@@ -18,7 +18,7 @@
             try {
                 const response = await fetch(`/${page}/${locale}.html`);
                 if (!response.ok) {
-                    container.innerHTML = `<p>Page "${page}" not found</p>`;
+                    container.innerHTML = `<p>Page "/${page}/${locale}" not found</p>`;
                     return;
                 }
                 
